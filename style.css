@@ -172,20 +172,6 @@ h3 {
   transition: opacity 0.3s ease;
 }
 
-.Side:hover .hover {
-  opacity: 1;
-}
-.Side .link {
-  display: none;
-  position: absolute;
-  gap: 2rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  background-color: transparent;
-}
-
 .Side .link .viewSite,
 .Side .link .viewCode {
   color: #ffffff;
@@ -197,25 +183,16 @@ h3 {
   width: 7rem;
 }
 
-.Side .link .viewSite:hover,
-.Side .link .viewCode:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #111f47;
+.Side .link {
+  display: none;
+  position: absolute;
+  gap: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background-color: transparent;
 }
-
-.wordpress .Side .link .viewSite {
-  width: 14rem;
-}
-
-.Side:hover .link,
-.Side:hover .link2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 1;
-}
-
 /*  */
 
 .front .seemore {
@@ -348,5 +325,28 @@ h5 {
 
   .iconFooter img {
     width: 3%;
+  }
+
+  .Side:hover .hover {
+    opacity: 1;
+  }
+
+  .Side .link .viewSite:hover,
+  .Side .link .viewCode:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #111f47;
+  }
+
+  .wordpress .Side .link .viewSite {
+    width: 14rem;
+  }
+
+  .Side:hover .link,
+  .Side:hover .link2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
   }
 }
